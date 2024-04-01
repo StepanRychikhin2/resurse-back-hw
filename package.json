@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+
+  "scripts": {
+"ser": "json-server -w movies.json"
+  }
+}
+
+
