@@ -8,6 +8,10 @@ const directorinputADD = document.querySelector(".directorinput")
 const yearinputADD = document.querySelector(".yearinput")
 const btnADD = document.querySelector(".btnADD")
 const mobalADD = document.querySelector(".mobalADD")
+const mobalEditOpen = document.querySelector(".button-edit-modal")
+const input = document.querySelector(".input")
+
+
 
 btnOpenmodal.addEventListener("click", () => {
     mobalADD.classList.remove("true")
@@ -17,6 +21,7 @@ btnOpenmodal.addEventListener("click", () => {
 btnADD.addEventListener("click", () => {
     mobalADD.classList.add("true")
     const newMovie = {
+        id: idinputADD.value,
         title: titleinputADD.value,
         genre: genreinputADD.value,
         director: directorinputADD.value,
@@ -24,21 +29,6 @@ btnADD.addEventListener("click", () => {
     };
 
 
-
-// function addMovie(add) {
-//     let myURL = `http://localhost:3000/movies`;
-//     fetch(myURL)
-//     .then((data) => data.json())
-//     .then((data) => {
-//         data.JSON.stringify(add)
-      
-    
-       
-//     });
-    
-
-// }
-// addMovie(newMovie)
 
 
 function addMovie(newMovie) {
@@ -84,3 +74,68 @@ function findLock() {
   }
 
   findLock()
+
+
+
+
+
+
+
+
+
+const titleinputed = document.querySelector(".titleinputed")
+const genreinputed = document.querySelector(".genreinputed")
+const directorinputed = document.querySelector(".directorinputed")
+const yearinputed = document.querySelector(".yearinputed")
+const btned = document.querySelector(".btned")
+const modaledit = document.querySelector(".mobaladit")
+  mobalEditOpen.addEventListener("click", () => {
+    modaledit.classList.remove("true")
+})
+
+
+btned.addEventListener("click", () => {
+    modaledit.classList.add("true")
+    const movieIdToUpdate = input.value;
+    const updatedMovieData = {
+            title: titleinputed.value,
+            genre: genreinputed.value,
+            director: directorinputed.value,
+            year: yearinputed.value,
+    };
+    function updateMovie(movieId, updatedData) {
+
+        const response =  fetch(`http://localhost:3000/movies/${movieId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedData),
+        });
+
+}
+updateMovie(movieIdToUpdate, updatedMovieData);
+  })
+
+
+  
+  const btndel = document.querySelector(".button-delete")
+  const inputIDDel = document.querySelector(".inputdel")
+
+
+
+
+
+btndel.addEventListener("click",() => {
+    const movieIdToDelete = inputIDDel.value;
+    function deleteMovie(movieId) {
+        {
+           const response =  fetch(`http://localhost:3000/movies/${movieId}`, {
+               method: 'DELETE',
+           });
+   
+   
+   }
+   }
+   deleteMovie(movieIdToDelete)
+})

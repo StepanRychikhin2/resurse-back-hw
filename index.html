@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <button class="button-addopen-modal">add</button>
-<ul class="list">
+    <div class="add">
+      <button class="button-edit-modal">editMovie</button>
+      <input class="input" placeholder="id" type="number" />
+    </div>
+    <div class="rempve">
+      <button class="button-delete">delete</button>
+      <input class="inputdel" placeholder="id" type="number" />
+    </div>
+    
+    <ul class="list"></ul>
 
-</ul>
+    <div class="mobalADD true">
+      <h2>id</h2>
+      <input class="idinput" type="number" />
+      <h2>title</h2>
+      <input class="titleinput" type="text" />
+      <h2>genre</h2>
+      <input class="genreinput" type="text" />
+      <h2>director</h2>
+      <input class="directorinput" type="text" />
+      <h2>year</h2>
+      <input class="yearinput" type="number" />
+      <button type="button" class="btnADD">sentt</button>
+    </div>
 
-
-<div class="mobalADD true">
-<input class="idinput" type="text">
-<input class="titleinput" type="text">
-<input class="genreinput" type="text">
-<input class="directorinput" type="text">
-<input class="yearinput" type="text">
-<button type="button" class="btnADD">sentt</button>
-</div>
-    <script  src="./index.js"></script>
-</body>
+    <div class="mobaladit true">
+      <h2>title</h2>
+      <input class="titleinputed" type="text" />
+      <h2>genre</h2>
+      <input class="genreinputed" type="text" />
+      <h2>director</h2>
+      <input class="directorinputed" type="text" />
+      <h2>year</h2>
+      <input class="yearinputed" type="number" />
+      <button type="button" class="btned">sentt</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>
