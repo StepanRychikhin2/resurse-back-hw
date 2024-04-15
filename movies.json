@@ -1,17 +1,10 @@
 {
   "movies": [
     {
-      "id": "2",
-      "title": "The Godfather",
-      "genre": "Crime",
-      "director": "Francis Ford Coppola",
-      "year": 1972
-    },
-    {
-      "title": "123",
-      "genre": "123",
-      "director": "123",
-      "year": "123",
+      "title": "",
+      "genre": "",
+      "director": "",
+      "year": "",
       "id": "3"
     },
     {
@@ -34,6 +27,20 @@
       "genre": "SEf",
       "director": "sef",
       "year": "123"
+    },
+    {
+      "id": "",
+      "title": "",
+      "genre": "",
+      "director": "",
+      "year": ""
+    },
+    {
+      "id": "",
+      "title": "",
+      "genre": "",
+      "director": "",
+      "year": ""
     }
   ]
 }
