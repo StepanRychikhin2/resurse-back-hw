@@ -1,13 +1,6 @@
 {
   "movies": [
     {
-      "id": "4",
-      "title": "The Dark Knight",
-      "genre": "Action",
-      "director": "Christopher Nolan",
-      "year": 2008
-    },
-    {
       "title": "W4ETG",
       "genre": "WE4TF",
       "director": "WWEF",
@@ -20,6 +13,13 @@
       "genre": "SEf",
       "director": "sef",
       "year": "123"
+    },
+    {
+      "id": "22",
+      "title": "уацук",
+      "genre": "цук",
+      "director": "цук",
+      "year": "3"
     }
   ]
 }

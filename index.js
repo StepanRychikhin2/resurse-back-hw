@@ -42,7 +42,12 @@ function addMovie(newMovie) {
         });
 
 }
-addMovie(newMovie)
+if (idinputADD.value == 0 || titleinputADD.value == 0 || genreinputADD.value == 0 || directorinputADD.value == 0 || yearinputADD.value == 0) {
+    alert("Введіть коткне значення або заповніть поля")
+} else {
+    addMovie(newMovie)
+}
+
 })
 function findLock() {
     let myURL = `http://localhost:3000/movies`;
